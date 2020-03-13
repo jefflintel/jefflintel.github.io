@@ -31,6 +31,10 @@
     width: 66vw;
 }
 
+#name, #title {
+    display: none;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {

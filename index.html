@@ -9,11 +9,14 @@
         <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Roboto:400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
         <script src="js/site.js"></script>
         <title>Jeff Lintel's Portfolio</title>
     </head>
-    <body id="test">
+    <body id="test" data-spy="scroll" data-target="#navbar" data-offset="50">
+      <div class="modal">
+        <div class="modal-dialog"></div>
+      </div>
         <nav id="navbar" class="fixed-top">
             <ul class="nav d-flex">
                 <li class="nav-item p-2">
@@ -33,13 +36,13 @@
                 </li>
             </ul>
         </nav>
-        <div class="text-right fixed-bottom">
+        <div class="text-right fixed-bottom mr-2">
           <a class="text-warning" href="mailto:jlintel@my365.bellevue.edu?subject=Awesome%20website"><i class="fas fa-envelope"></i> Contact Jeff</a>
         </div>
         <div class="container-fluid" id="home">
             <div id="tagline">
-                <p class="display-1 text-center">Jeff Lintel</p>
-                <p class="display-3 text-center">Full Stack Web Developer</p>
+                <p id="name" class="display-1 text-center text-warning">Jeff Lintel</p>
+                <p id="title" class="display-3 text-center text-warning">Full Stack Web Developer</p>
             </div>
         </div>
         <div class="container-fluid" id="bellevue-projects">
