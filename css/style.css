@@ -20,7 +20,7 @@
     top: 10vh;
 }
 
-#bellevue-projects {
+#bellevue-prototypes, #bellevue-projects, #other-projects {
     padding-top: 10vh;
     height: 100vh;
 }
@@ -33,6 +33,10 @@
 
 #name, #title {
     display: none;
+}
+
+.progress-text {
+    color: #4e3673;
 }
 
 .navbar-default .navbar-nav > .active > a,
