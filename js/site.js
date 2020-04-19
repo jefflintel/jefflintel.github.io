@@ -12,9 +12,7 @@ $(document).ready(function(){
         $(overlay).fadeTo(1000, 1).delay(500);
     });
 
-    $('#email').scroll(function() {
-        $('#email').addClass("display-4").delay(500);
-    });
-     
+   
+    
 });
 
