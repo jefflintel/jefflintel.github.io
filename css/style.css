@@ -1,4 +1,4 @@
-#test {
+.background {
     background-color: #2b1e40;
 }
 
@@ -37,6 +37,11 @@
 
 .progress-text {
     color: #4e3673;
+}
+
+.carousel-item img{
+    height: 85vh;
+    margin: auto;
 }
 
 .navbar-default .navbar-nav > .active > a,
