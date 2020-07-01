@@ -9,10 +9,11 @@
         <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Roboto:400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script src="../js/site.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+        
         <title>Jeff Lintel's Portfolio - WEB 420</title>
     </head>
 
@@ -20,52 +21,45 @@
         <div class="modal">
           <div class="modal-dialog"></div>
         </div>
-          <nav id="navbar" class="fixed-top">
-              <ul class="nav d-flex">
-                <li class="nav-item p-2">
-                  <a href="mailto:jlintel@my365.bellevue.edu?subject=Awesome%20website" class="text-warning"><i class="far fa-envelope"> </i></a>
-                </li>
-                <li class="nav-item p-2">
-                  <a href="https://www.linkedin.com/in/jeffrey-lintel-9679b3101/" class="text-warning"><i class="fab fa-linkedin"> </i></a>
-                </li>
-                <li class="nav-item p-2 mr-auto">
-                  <a href="https://github.com/jefflintel" class="text-warning"><i class="fab fa-github"> </i></a>
-                </li>
-                <li class="nav-item p-2">
-                  <a href="../index.html" class="text-warning"><i class="fas fa-home"></i> Home </a>
-                </li>
-                <li class="nav-item p-2">
-                  <a class="text-warning" href="../index.html#bellevue-prototypes"> <i class="far fa-file-code"> </i> Projects and Prototypes</a>
-                </li>
-                <li class="nav-item p-2">
-                  <a class="text-warning" href="../web-335/lintel-diagrams.html"> <i class="fas fa-database"></i> Diagrams</a>
-                </li>
-                <li class="nav-item p-2">
-                    <a class="text-warning" href="../web-420/lintel-rest.html"> <i class="fas fa-file-powerpoint"></i> REST Presentations</a>
-                </li> 
-                <li class="nav-item p-2">
-                    <a class="text-warning" href="../web-420/lintel-soap-apis.html"> <i class="fas fa-file-powerpoint"></i> SOAP Presentation</a>
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="text-warning" href="../web-420/lintel-json-apis.html"> <i class="fas fa-file-powerpoint"></i> JSON+API Presentation</a>
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="text-warning" href="../web-420/lintel-hypermedia-design.html"> <i class="fas fa-file-powerpoint"></i> Hypermedia Design</a>
-                  </li> 
-                  <li class="nav-item p-2">
-                    <a class="text-warning" href="#"> <i class="fas fa-file-powerpoint"></i> SOA</a>
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="text-warning" href="../jefflintel.github.io/web-420/lintel-microservices.html"> <i class="fas fa-file-powerpoint"></i> Microservices</a>
-                  </li>
-                  <li class="nav-item p-2">
-                    <a class="text-warning" href="../web-420/lintel-oauth-security.html"> <i class="fas fa-file-powerpoint"></i> OAuth</a>
-                  </li>
-                <li class="nav-item p-2">
-                  <a href="../index.html#about" class="text-warning"><i class="fas fa-user-tie"> </i> About </a>
-                </li>
-              </ul>
-          </nav>
+        <nav id="navbar" class="fixed-top">
+          <ul class="nav d-flex">
+            <li class="nav-item p-2">
+              <a href="mailto:jlintel@my365.bellevue.edu?subject=Awesome%20website" class="text-warning"><i class="far fa-envelope"> </i></a>
+            </li>
+            <li class="nav-item p-2">
+              <a href="https://www.linkedin.com/in/jeffrey-lintel-9679b3101/" class="text-warning"><i class="fab fa-linkedin"> </i></a>
+            </li>
+            <li class="nav-item p-2 mr-auto">
+              <a href="https://github.com/jefflintel" class="text-warning"><i class="fab fa-github"> </i></a>
+            </li>
+            <li class="nav-item p-2">
+              <a href="#home" class="text-warning"><i class="fas fa-home"></i> Home </a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="text-warning" href="#bellevue-prototypes"> <i class="far fa-file-code"> </i> Projects and Prototypes</a>
+            </li>
+            <li id="dropdown" class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-file-powerpoint"></i> Presentations
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-warning" href="../jefflintel.github.io/web-335/lintel-diagrams.html"> <i class="fas fa-database"></i> Diagrams</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-warning" href="../jefflintel.github.io/web-420/lintel-rest.html"> <i class="fas fa-file-powerpoint"></i> REST Presentations</a>
+                <a class="dropdown-item text-warning" href="../jefflintel.github.io/web-420/lintel-soap-apis.html"> <i class="fas fa-file-powerpoint"></i> SOAP Presentation</a>
+                <a class="dropdown-item text-warning" href="../jefflintel.github.io/web-420/lintel-json-apis.html"> <i class="fas fa-file-powerpoint"></i> JSON+API Presentation</a>
+                <a class="dropdown-item text-warning" href="../jefflintel.github.io/web-420/lintel-hypermedia-design.html"> <i class="fas fa-file-powerpoint"></i> Hypermedia Design</a>
+                <a class="dropdown-item text-warning" href="../jefflintel.github.io/web-420/lintel-soa.html"> <i class="fas fa-file-powerpoint"></i> SOA</a>
+                <a class="dropdown-item text-warning" href="../jefflintel.github.io/web-420/lintel-microservices.html"> <i class="fas fa-file-powerpoint"></i> Microservices</a>
+                <a class="dropdown-item text-warning" href="../web-420/lintel-oauth-security.html"> <i class="fas fa-file-powerpoint"></i> OAuth</a>
+              </div>
+            </li>
+            <li class="nav-item p-2">
+              <a href="#about" class="text-warning"><i class="fas fa-user-tie"> </i> About </a>
+            </li>
+            
+          </ul>
+      </nav>
           <div id="email" class="text-right fixed-bottom mr-2">
             <a class="text-warning" href="mailto:jlintel@my365.bellevue.edu?subject=Awesome%20website"><i class="fas fa-envelope"></i> Contact Jeff</a>
           </div>

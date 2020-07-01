@@ -2,8 +2,20 @@
     background-color: #2b1e40;
 }
 
+.dropdown-menu {
+    background-color: #4e3673 !important; 
+}
+
+.dropdown-divider {
+    border-top: 1px solid #f0ad4e !important;
+}
+
+.dropdown-item:hover {
+    background-color: #2b1e40 !important;
+}
+
 #navbar {
-    background-color: #4e3673;
+    background-color: #4e3673; 
 }
 
 #home {
