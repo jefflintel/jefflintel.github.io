@@ -80,9 +80,21 @@ const commands = {
       "<blue><a href='https://www.linkedin.com/in/jeffrey-lintel/'>Jeff Lintel on LinkedIn</a></blue>"
     );
   },
+  credits() {
+    term
+      .echo("<white>Libraries Used:</white>")
+      .echo(
+        "~*~ <aqua><a href='https://terminal.jcubic.pl'>jQuery Terminal</a></aqua>"
+      )
+      .echo(
+        "~*~ <aqua><a href='https://github.com/patorjk/figlet.js/'>Figlet</a></aqua>"
+      )
+      .echo(
+        "~*~ <aqua><a href='ttps://github.com/jcubic/isomorphic-lolcat'>Isomorphic Lolcat</a></aqua>"
+      );
+  },
 };
-
-const font = "Poison";
+const font = "Blocks";
 
 const ready = () => {
   const seed = rand(256);
@@ -157,11 +169,6 @@ const formatted_list = command_list.map((cmd) => {
 });
 const help = formatter.format(command_list);
 
-// term.on("click", ".command",  function() {
-//   const command = $(this).text();
-//   term.exec(command);
-// });
-
 const any_command_re = new RegExp(`^\s*(${command_list.join("|")})`);
 
 const re = new RegExp(`^\s*(${command_list.join("|")})(\s?.*)`);
@@ -177,14 +184,36 @@ const directories = {
   education: [
     "",
     "<purple>Education</purple>",
-    "~*~ <purple><a href='https://www.bellevue.edu/degrees/bachelor/web-development-bs/' target='_blank'> Bellevue University</a></purple><gold>Web Development</gold>",
-    "~*~ <purple><a href='https://www2.mccneb.edu/' target='_blank'> Metropolitan Community College - Omaha, NE</a></purple><gold>Programming for Database and Web</gold>",
-    "~*~ <purple><a href='https://aiminstitute.org/' target='_blank'> AIM Institute</a></purple><gold>.NET Development Bootcamp</gold>",
-    "~*~ <purple><a href='https://aiminstitute.org/' target='_blank'> AIM Institute</a></purple><gold><purple><gold>Foundations of Web Development</gold>",
-  ],
+
+    [
+      [
+        "Bellevue University",
+        "https://www.bellevue.edu/degrees/bachelor/web-development-bs/",
+        "Web Development",
+      ],
+      [
+        "Metropolitan Community College, Omaha NE",
+        "https://www2.mccneb.edu/",
+        "Programming for Database and Web",
+      ],
+      [
+        "AIM Institute",
+        "https://aiminstitute.org/",
+        ".NET Development Bootcamp",
+      ],
+      [
+        "AIM Institute",
+        "https://aiminstitute.org/",
+        "Foundations of Web Development",
+      ],
+    ].map(([name, url, description = ""]) => {
+      return `~*~ <purple><a href="${url}">${name}</a></purple> &mdash; <gold>${description}</gold>`;
+    }),
+    "",
+  ].flat(),
   projects: [
     "",
-    "<purple>Projects</purple",
+    "<purple>Projects</purple>",
     [
       [
         "Reactivities",
