@@ -207,7 +207,7 @@ const directories = {
         "Foundations of Web Development",
       ],
     ].map(([name, url, description = ""]) => {
-      return `~*~ <purple><a href="${url}">${name}</a></purple> &mdash; <gold>${description}</gold>`;
+      return `~*~ <purple><a target="_blank" href="${url}">${name}</a></purple> &mdash; <gold>${description}</gold>`;
     }),
     "",
   ].flat(),
@@ -241,7 +241,7 @@ const directories = {
         "All of my completed projects",
       ],
     ].map(([name, url, description = ""]) => {
-      return `~*~ <a href="${url}">${name}</a> &mdash; <white>${description}</white>`;
+      return `~*~ <a target="_blank" href="${url}">${name}</a> &mdash; <white>${description}</white>`;
     }),
     "",
   ].flat(),
