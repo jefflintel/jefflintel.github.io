@@ -94,7 +94,7 @@ const commands = {
       );
   },
 };
-const font = "Blocks";
+const font = "Crawford2";
 
 const ready = () => {
   const seed = rand(256);
