@@ -77,20 +77,20 @@ const commands = {
   },
   linkedin() {
     term.echo(
-      "<blue><a href='https://www.linkedin.com/in/jeffrey-lintel/'>Jeff Lintel on LinkedIn</a></blue>"
+      '<blue><a href="https://www.linkedin.com/in/jeffrey-lintel/">Jeff Lintel on LinkedIn</a></blue>'
     );
   },
   credits() {
     term
       .echo("<white>Libraries Used:</white>")
       .echo(
-        "~*~ <aqua><a href='https://terminal.jcubic.pl'>jQuery Terminal</a></aqua>"
+        '~*~ <a href="https://terminal.jcubic.pl">jQuery Terminal</a>'
       )
       .echo(
-        "~*~ <aqua><a href='https://github.com/patorjk/figlet.js/'>Figlet</a></aqua>"
+        '~*~ <a href="https://github.com/patorjk/figlet.js/">Figlet</a>'
       )
       .echo(
-        "~*~ <aqua><a href='ttps://github.com/jcubic/isomorphic-lolcat'>Isomorphic Lolcat</a></aqua>"
+        '~*~ <a href="https://github.com/jcubic/isomorphic-lolcat">Isomorphic Lolcat</a>'
       );
   },
 };
